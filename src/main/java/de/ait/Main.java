@@ -16,9 +16,11 @@ public class Main {
 
         System.out.println(StringTools.firstToUpperCase("mama"));//Mama
         System.out.println(StringTools.firstToUpperCase("i have got a cat"));//I have got a cat
+        System.out.println(StringTools.firstToUpperCase(" mama"));//Mama
 
         System.out.println(StringTools.isStartingFromCapital("Mama"));//true
         System.out.println(StringTools.isStartingFromCapital("mama"));//false
+
 
     }
 }
