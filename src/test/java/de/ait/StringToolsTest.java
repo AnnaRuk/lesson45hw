@@ -46,7 +46,33 @@ class StringToolsTest {
 
     }
 
+    @Nested
+    @Name("Test isStartingFromCapital")
+    class IsStartingFromCapital{
 
+        @Test
+        @Name("Test 1 of 2: class StringTools, method isStartingFromCapital")
+        public void isStartingFromCapital_Ivan_TrueReturned() {
+            //arrange
+            // action
+            Boolean actual = StringTools.isStartingFromCapital("Ivan");
+            //assert
+            Boolean expected = true;
+            assertEquals(expected, actual);
+        }
+
+        @Test
+        @Name("Test 2 of 2: class StringTools, method isStartingFromCapital")
+        public void isStartingFromCapital_ivan_FalseReturned() {
+            //arrange
+            // action
+            Boolean actual = StringTools.isStartingFromCapital("ivan");
+            //assert
+            Boolean expected = false;
+            assertEquals(expected, actual);
+        }
+
+    }
 
 
 }
